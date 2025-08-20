@@ -21,6 +21,6 @@ code .
 ③ 変更をステージする（git dp）
 ##ターミナルに
 
-dit dp
+git dp
 
 GitHubのページを開いて、更新されてるか確認
