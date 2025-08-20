@@ -1,9 +1,30 @@
-cd progress-log
+① VS Code を開く
+code .
 
-# その日のファイルを作成（テンプレからコピーすると楽）
-cp template.md logs/$(date +%F).md
 
-# ファイルを編集して保存（VS Codeなどで）
+② 日報ファイルを編集する
+
+例：logs/2025-08-20.md という新しいファイルを作って
+
+# YYYY-MM-DD
+
+## 今日やったこと
+- 
+
+## 学んだこと (TIL)
+- 
+
+## 明日の予定
+-
+
+
+③ 変更をステージする（git add）
 git add .
+##Windowsの場合
+git commit -m "docs: daily log ($(Get-Date -Format yyyy-MM-dd))"
+##Linux/Macの場合
 git commit -m "docs: daily log ($(date +%F))"
+
 git push
+
+GitHubのページを開いて、更新されてるか確認
