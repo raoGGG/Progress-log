@@ -1,9 +1,0 @@
-cd progress-log
-
-# その日のファイルを作成（テンプレからコピーすると楽）
-cp template.md logs/$(date +%F).md
-
-# ファイルを編集して保存（VS Codeなどで）
-git add .
-git commit -m "docs: daily log ($(date +%F))"
-git push
