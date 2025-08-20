@@ -18,13 +18,9 @@ code .
 -
 
 
-③ 変更をステージする（git add）
-git add .
-##Windowsの場合
-git commit -m "docs: daily log ($(Get-Date -Format yyyy-MM-dd))"
-##Linux/Macの場合
-git commit -m "docs: daily log ($(date +%F))"
+③ 変更をステージする（git dp）
+##ターミナルに
 
-git push
+dit dp
 
 GitHubのページを開いて、更新されてるか確認
