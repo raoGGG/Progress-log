@@ -1,20 +1,21 @@
-1. 作業前に最新を取り込む
-git pull --rebase
+0.パワーシェルでコピーペースト
+cd C:\Users\81809\Desktop\progress-log
+git status
 
-2. 新しい日報ファイルを作る
 
-例：2025年8月24日の場合
+1.新しい日報ファイルを作成
 
-2025-08-24.md
+ni -Force "logs/2025-08/2025-08-25.md"
+code logs/2025-08/2025-08-25.md
 
-3. ステージング
-git add 2025-08-24.md
+2.編集＆保存
 
-4. コミット
-git commit -m "docs: daily log (2025-08-24)"
+3.Git で反映
 
-5. プッシュ
-git push
+git add logs/2025-08/2025-08-25.md
+git commit -m "docs(logs): add daily log 2025-08-25"
+git pull --rebase origin main   # リモート更新を取り込み
+git push origin main
 
 
 Mac版
